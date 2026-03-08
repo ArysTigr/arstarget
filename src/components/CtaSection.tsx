@@ -5,10 +5,13 @@ const WHATSAPP_URL = "https://wa.me/77066980045";
 
 const CtaSection = () => {
   return (
-    <section id="cta" className="section-padding bg-gradient-to-br from-primary to-primary/85 relative overflow-hidden">
-      {/* Decorative */}
-      <div className="absolute top-0 right-0 w-48 sm:w-80 h-48 sm:h-80 bg-accent/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-40 sm:w-64 h-40 sm:h-64 bg-highlight/10 rounded-full blur-3xl" />
+    <section id="cta" className="section-padding relative overflow-hidden" style={{
+      background: 'linear-gradient(135deg, hsl(230 70% 42%), hsl(270 65% 50%), hsl(230 70% 35%))'
+    }}>
+      {/* Vibrant decorative blobs */}
+      <div className="absolute top-0 right-0 w-[350px] h-[350px] bg-gradient-to-bl from-coral/20 via-highlight/15 to-transparent rounded-full blur-3xl animate-blob-drift" />
+      <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-gradient-to-tr from-cyan/15 via-accent/10 to-transparent rounded-full blur-3xl animate-blob-drift-slow" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[250px] h-[250px] bg-rose/8 rounded-full blur-3xl" />
       
       <div className="container-narrow text-center relative px-4">
         <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-primary-foreground mb-3 sm:mb-4 px-2">

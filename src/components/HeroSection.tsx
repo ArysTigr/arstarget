@@ -17,9 +17,10 @@ const HeroSection = () => {
       />
       <div className="absolute inset-0 bg-gradient-to-br from-primary/8 via-transparent to-accent/5" />
       
-      {/* Decorative elements - hidden on small screens */}
-      <div className="hidden sm:block absolute top-32 right-10 w-72 h-72 bg-accent/5 rounded-full blur-3xl animate-float" />
-      <div className="hidden sm:block absolute bottom-20 left-5 w-56 h-56 bg-primary/5 rounded-full blur-3xl animate-float animate-delay-200" />
+      {/* Vibrant animated blobs */}
+      <div className="absolute top-20 right-0 w-[500px] h-[500px] bg-gradient-to-br from-violet/10 via-primary/8 to-transparent rounded-full blur-3xl animate-blob-drift" />
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-accent/10 via-cyan/8 to-transparent rounded-full blur-3xl animate-blob-drift-slow" />
+      <div className="absolute top-1/2 left-1/3 w-[300px] h-[300px] bg-gradient-to-r from-coral/6 to-rose/6 rounded-full blur-3xl animate-blob-drift animate-delay-300" />
       
       <div className="relative container-narrow px-4 py-10 sm:section-padding w-full">
         <div className="max-w-2xl">
@@ -29,7 +30,7 @@ const HeroSection = () => {
           </div>
           
           <h1 className="text-[1.65rem] leading-[1.2] sm:text-3xl md:text-5xl lg:text-[3rem] font-extrabold sm:leading-[1.15] text-foreground mb-4 sm:mb-6 animate-fade-in-up animate-delay-100">
-            Привожу клиентов из Instagram и&nbsp;Facebook — <span className="gradient-text">а&nbsp;не&nbsp;просто&nbsp;клики</span>
+            Привожу клиентов из Instagram и&nbsp;Facebook — <span className="gradient-text-vivid">а&nbsp;не&nbsp;просто&nbsp;клики</span>
           </h1>
           
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-7 sm:mb-10 leading-relaxed max-w-xl font-body animate-fade-in-up animate-delay-200">

@@ -1,15 +1,16 @@
 import { BadgeCheck, Instagram, Facebook } from "lucide-react";
 
 const platforms = [
-  { icon: Instagram, label: "Instagram", gradient: "from-pink-500/12 to-purple-500/12", color: "text-pink-600" },
-  { icon: Facebook, label: "Facebook", gradient: "from-blue-500/12 to-blue-600/12", color: "text-blue-600" },
-  { icon: BarChartIcon, label: "Ads Manager", gradient: "from-primary/12 to-accent/8", color: "text-primary" },
+  { icon: Instagram, label: "Instagram", gradient: "from-rose/15 to-violet/12", color: "text-rose" },
+  { icon: Facebook, label: "Facebook", gradient: "from-primary/15 to-cyan/12", color: "text-primary" },
+  { icon: BarChartIcon, label: "Ads Manager", gradient: "from-violet/12 to-accent/8", color: "text-violet" },
 ];
 
 const TrustSection = () => {
   return (
-    <section className="section-padding bg-background">
-      <div className="container-narrow text-center">
+    <section className="section-padding bg-background relative overflow-hidden">
+      <div className="absolute inset-0 bg-mesh-1" />
+      <div className="container-narrow text-center relative">
         <div className="inline-flex items-center gap-2 bg-accent/10 text-accent border border-accent/20 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full font-bold mb-5 sm:mb-6 shadow-sm text-sm">
           <BadgeCheck className="w-4 h-4 sm:w-5 sm:h-5" />
           Meta Blueprint Certified
