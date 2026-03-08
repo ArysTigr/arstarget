@@ -10,21 +10,27 @@ const TrustSection = () => {
         </div>
         
         <p className="text-muted-foreground max-w-xl mx-auto mb-8 text-lg leading-relaxed">
-          Сертифицированный специалист по рекламе в экосистеме Meta. Знаю алгоритмы и как обходить типичные ошибки.
+          Не «самоучка из YouTube» — а сертифицированный специалист Meta. Знаю, как работают алгоритмы, и использую это для вашей выгоды.
         </p>
         
-        <div className="flex items-center justify-center gap-6">
-          <div className="flex items-center gap-2 text-muted-foreground">
-            <Instagram className="w-6 h-6" />
-            <span className="font-medium">Instagram</span>
+        <div className="flex items-center justify-center gap-8">
+          <div className="flex flex-col items-center gap-2 group">
+            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-pink-500/15 to-purple-500/15 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <Instagram className="w-6 h-6 text-pink-600" />
+            </div>
+            <span className="text-sm font-medium text-muted-foreground">Instagram</span>
           </div>
-          <div className="flex items-center gap-2 text-muted-foreground">
-            <Facebook className="w-6 h-6" />
-            <span className="font-medium">Facebook</span>
+          <div className="flex flex-col items-center gap-2 group">
+            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500/15 to-blue-600/15 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <Facebook className="w-6 h-6 text-blue-600" />
+            </div>
+            <span className="text-sm font-medium text-muted-foreground">Facebook</span>
           </div>
-          <div className="flex items-center gap-2 text-muted-foreground">
-            <BarChartIcon className="w-6 h-6" />
-            <span className="font-medium">Ads Manager</span>
+          <div className="flex flex-col items-center gap-2 group">
+            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/15 to-primary/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <BarChartIcon className="w-6 h-6 text-primary" />
+            </div>
+            <span className="text-sm font-medium text-muted-foreground">Ads Manager</span>
           </div>
         </div>
       </div>

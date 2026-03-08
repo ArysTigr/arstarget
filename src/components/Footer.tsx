@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="section-padding bg-foreground py-10">
       <div className="container-narrow flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-sm text-primary-foreground/60">
-          © Ваше Имя, 2026 | Таргетолог для бизнеса в Казахстане
+          © Арыстан, 2026 | Таргетолог для бизнеса в Казахстане
         </p>
         <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
           <Button variant="ghost" size="sm" className="text-primary-foreground/70 hover:text-primary-foreground hover:bg-primary-foreground/10">

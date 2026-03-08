@@ -19,11 +19,14 @@ const HeroSection = () => {
       
       <div className="relative container-narrow section-padding w-full">
         <div className="max-w-2xl animate-fade-in-up">
+          <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-1.5 rounded-full text-sm font-semibold mb-5 animate-fade-in-up">
+            🔥 Уже 50+ предпринимателей выбрали результат
+          </div>
           <h1 className="text-3xl md:text-5xl lg:text-[2.75rem] font-extrabold leading-tight text-foreground mb-6">
-            Привожу клиентов из Instagram и Facebook — а&nbsp;не&nbsp;просто клики
+            Привожу клиентов из Instagram и&nbsp;Facebook — <span className="text-primary">а&nbsp;не&nbsp;просто клики</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-xl">
-            Настраиваю таргет для онлайн-школ и локального бизнеса в Казахстане. Прозрачная отчётность и окупаемые лиды — без воды.
+            Вы тратите на рекламу, но не видите заявок? Настраиваю таргет для онлайн-школ и локального бизнеса в Казахстане так, чтобы <strong className="text-foreground">каждый вложенный тенге возвращался с прибылью.</strong>
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 mb-4">
@@ -40,7 +43,7 @@ const HeroSection = () => {
           </div>
           
           <p className="text-sm text-muted-foreground">
-            Отвечаю в течение часа. Без спама и долгих презентаций.
+            ⏱ Отвечаю в течение часа. Аудит — бесплатно и без обязательств.
           </p>
         </div>
       </div>
