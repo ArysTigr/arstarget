@@ -56,8 +56,9 @@ const ReviewsSection = () => {
   const review = reviews[current];
 
   return (
-    <section className="section-padding bg-card">
-      <div className="container-narrow">
+    <section className="section-padding bg-card relative overflow-hidden">
+      <div className="absolute inset-0 bg-mesh-2" />
+      <div className="container-narrow relative">
         <div className="text-center mb-8 sm:mb-12">
           <span className="inline-block text-accent text-xs sm:text-sm font-bold uppercase tracking-widest mb-2 sm:mb-3">Отзывы</span>
           <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-foreground mb-2 sm:mb-3">
@@ -69,8 +70,8 @@ const ReviewsSection = () => {
         </div>
 
         <div className="max-w-2xl mx-auto">
-          <div className="relative bg-background rounded-2xl border border-border/60 p-5 sm:p-8 md:p-10 shadow-sm">
-            <Quote className="absolute top-4 left-4 sm:top-6 sm:left-6 w-8 h-8 sm:w-10 sm:h-10 text-primary/10" />
+          <div className="relative bg-background/80 backdrop-blur-sm rounded-2xl border border-border/60 p-5 sm:p-8 md:p-10 shadow-sm">
+            <Quote className="absolute top-4 left-4 sm:top-6 sm:left-6 w-8 h-8 sm:w-10 sm:h-10 text-violet/15" />
 
             <div className="relative pt-4 sm:pt-0">
               <div className="flex items-center gap-0.5 sm:gap-1 mb-3 sm:mb-4">
@@ -114,7 +115,7 @@ const ReviewsSection = () => {
                   key={i}
                   onClick={() => { setIsAutoPlaying(false); setCurrent(i); }}
                   className={`h-2.5 rounded-full transition-all duration-300 ${
-                    i === current ? "bg-primary w-6" : "bg-border hover:bg-muted-foreground/30 w-2.5"
+                    i === current ? "bg-gradient-to-r from-primary to-violet w-6" : "bg-border hover:bg-muted-foreground/30 w-2.5"
                   }`}
                   aria-label={`Отзыв ${i + 1}`}
                 />

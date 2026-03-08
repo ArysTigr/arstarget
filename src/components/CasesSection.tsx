@@ -10,7 +10,8 @@ const cases = [
     before: "Было: 1 200 ₸/лид",
     text: "За 3 недели снизил стоимость заявки на 43%. РОАС вырос до 4.2",
     badge: "−43%",
-    badgeColor: "bg-accent/10 text-accent",
+    badgeColor: "bg-accent/15 text-accent",
+    iconGradient: "from-violet/20 to-primary/10",
   },
   {
     icon: Building2,
@@ -20,7 +21,8 @@ const cases = [
     before: "Бюджет: 150 000 ₸",
     text: "38% заявок конвертировались в запись. Расписание заполнено на 3 недели",
     badge: "38% CR",
-    badgeColor: "bg-primary/10 text-primary",
+    badgeColor: "bg-primary/15 text-primary",
+    iconGradient: "from-cyan/20 to-accent/10",
   },
   {
     icon: ShoppingBag,
@@ -30,14 +32,16 @@ const cases = [
     before: "Первый запуск",
     text: "Окупаемость 3.1x с первого месяца. Бюджет масштабирован в 3 раза",
     badge: "3.1x ROI",
-    badgeColor: "bg-highlight/10 text-highlight",
+    badgeColor: "bg-coral/15 text-coral",
+    iconGradient: "from-coral/20 to-highlight/10",
   },
 ];
 
 const CasesSection = () => {
   return (
-    <section className="section-padding bg-card">
-      <div className="container-narrow">
+    <section className="section-padding bg-card relative overflow-hidden">
+      <div className="absolute inset-0 bg-mesh-3" />
+      <div className="container-narrow relative">
         <div className="text-center mb-8 sm:mb-12">
           <span className="inline-block text-primary text-xs sm:text-sm font-bold uppercase tracking-widest mb-2 sm:mb-3">Кейсы</span>
           <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-foreground mb-2 sm:mb-3 px-2">
@@ -50,9 +54,9 @@ const CasesSection = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5 mb-8 sm:mb-10">
           {cases.map((c) => (
-            <div key={c.label} className="bg-background p-5 sm:p-7 rounded-2xl border border-border/60 hover:border-primary/25 shadow-sm hover:shadow-card-hover transition-all duration-300 group">
+            <div key={c.label} className="bg-background/80 backdrop-blur-sm p-5 sm:p-7 rounded-2xl border border-border/60 hover:border-primary/25 shadow-sm hover:shadow-card-hover transition-all duration-300 group">
               <div className="flex items-center gap-3 mb-4 sm:mb-5">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-gradient-to-br from-primary/15 to-accent/10 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+                <div className={`w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-gradient-to-br ${c.iconGradient} flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300`}>
                   <c.icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                 </div>
                 <div>
