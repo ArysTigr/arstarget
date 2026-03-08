@@ -1,4 +1,4 @@
-import { BarChart3, Coins, Target, ArrowRight } from "lucide-react";
+import { BarChart3, Coins, Target } from "lucide-react";
 
 const benefits = [
   {
@@ -31,28 +31,32 @@ const BenefitsSection = () => {
   return (
     <section className="section-padding bg-background">
       <div className="container-narrow">
-        <div className="text-center mb-12">
-          <span className="inline-block text-accent text-sm font-bold uppercase tracking-widest mb-3">Преимущества</span>
-          <h2 className="text-2xl md:text-3xl font-extrabold text-foreground mb-3">
+        <div className="text-center mb-8 sm:mb-12">
+          <span className="inline-block text-accent text-xs sm:text-sm font-bold uppercase tracking-widest mb-2 sm:mb-3">Преимущества</span>
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-foreground mb-2 sm:mb-3 px-2">
             Почему предприниматели выбирают меня
           </h2>
-          <p className="text-muted-foreground text-lg font-body">
-            Три причины, которые превращают рекламный бюджет в прибыль
+          <p className="text-muted-foreground text-base sm:text-lg font-body">
+            Три причины, которые превращают бюджет в прибыль
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5">
           {benefits.map((b) => (
-            <div key={b.title} className="group p-7 rounded-2xl bg-card border border-border/60 hover:border-primary/25 shadow-sm hover:shadow-card-hover transition-all duration-300 relative overflow-hidden">
+            <div key={b.title} className="group p-5 sm:p-7 rounded-2xl bg-card border border-border/60 hover:border-primary/25 shadow-sm hover:shadow-card-hover transition-all duration-300 relative overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-accent to-highlight scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
-              <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${b.gradient} flex items-center justify-center mb-5 group-hover:scale-110 group-hover:-rotate-3 transition-all duration-300`}>
-                <b.icon className={`w-7 h-7 ${b.iconColor}`} />
+              <div className="flex items-start sm:block gap-4">
+                <div className={`w-12 h-12 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-gradient-to-br ${b.gradient} flex items-center justify-center sm:mb-5 shrink-0 group-hover:scale-110 group-hover:-rotate-3 transition-all duration-300`}>
+                  <b.icon className={`w-6 h-6 sm:w-7 sm:h-7 ${b.iconColor}`} />
+                </div>
+                <div className="flex-1">
+                  <div className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-2 sm:mb-3">
+                    {b.highlight}
+                  </div>
+                  <h3 className="text-base sm:text-lg font-bold text-foreground mb-1.5 sm:mb-2">{b.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed font-body text-sm sm:text-[15px]">{b.text}</p>
+                </div>
               </div>
-              <div className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3">
-                {b.highlight}
-              </div>
-              <h3 className="text-lg font-bold text-foreground mb-2">{b.title}</h3>
-              <p className="text-muted-foreground leading-relaxed font-body text-[15px]">{b.text}</p>
             </div>
           ))}
         </div>
