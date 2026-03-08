@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { MessageCircle, Phone } from "lucide-react";
+import { MessageCircle, Phone, Clock, ShieldCheck } from "lucide-react";
 
 const WHATSAPP_URL = "https://wa.me/77066980045";
 
@@ -8,18 +8,29 @@ const CtaSection = () => {
     <section id="cta" className="section-padding bg-primary">
       <div className="container-narrow text-center">
         <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-4">
-          Готовы получить предсказуемый поток клиентов?
+          Каждый день без рекламы — это клиенты, которые уходят к конкурентам
         </h2>
         <p className="text-primary-foreground/80 max-w-lg mx-auto mb-8 text-lg">
-          Напишите сейчас — отвечу в течение часа и бесплатно разберу вашу текущую стратегию.
+          Напишите прямо сейчас — я бесплатно разберу вашу рекламу и покажу, где вы теряете деньги. Без обязательств.
         </p>
         
         <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
           <Button variant="cta" size="lg" className="mb-6">
             <MessageCircle className="w-5 h-5" />
-            Написать в WhatsApp
+            Написать в WhatsApp — это бесплатно
           </Button>
         </a>
+        
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 text-primary-foreground/70 text-sm mb-6">
+          <div className="flex items-center gap-1.5">
+            <Clock className="w-4 h-4" />
+            <span>Ответ за 1 час</span>
+          </div>
+          <div className="flex items-center gap-1.5">
+            <ShieldCheck className="w-4 h-4" />
+            <span>Без спама и обязательств</span>
+          </div>
+        </div>
         
         <div className="flex items-center justify-center gap-2 text-primary-foreground/70">
           <Phone className="w-4 h-4" />
