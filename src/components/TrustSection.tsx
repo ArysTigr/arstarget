@@ -1,36 +1,37 @@
 import { BadgeCheck, Instagram, Facebook } from "lucide-react";
 
 const platforms = [
-  { icon: Instagram, label: "Instagram", gradient: "from-rose/12 to-violet/8", color: "text-rose" },
-  { icon: Facebook, label: "Facebook", gradient: "from-primary/12 to-cyan/8", color: "text-primary" },
-  { icon: BarChartIcon, label: "Ads Manager", gradient: "from-violet/10 to-accent/6", color: "text-violet" },
+  { icon: Instagram, label: "Instagram" },
+  { icon: Facebook, label: "Facebook" },
+  { icon: BarChartIcon, label: "Ads Manager" },
 ];
 
 const TrustSection = () => {
   return (
-    <section className="section-padding bg-background relative overflow-hidden">
-      <div className="absolute inset-0 bg-mesh-1" />
+    <section className="section-padding bg-card/30 relative overflow-hidden">
+      <div className="absolute inset-0 bg-mesh-3" />
       <div className="container-narrow text-center relative">
-        <div className="inline-flex items-center gap-2.5 bg-card/80 backdrop-blur-sm text-accent border border-accent/15 px-5 py-2.5 rounded-full font-bold mb-6 shadow-sm text-sm">
-          <BadgeCheck className="w-5 h-5" />
+        <div className="inline-flex items-center gap-2.5 text-primary/80 border border-primary/15 bg-primary/5 px-5 py-2.5 rounded-full font-medium mb-8 text-xs tracking-widest uppercase">
+          <BadgeCheck className="w-4 h-4" />
           Meta Blueprint Certified
         </div>
         
-        <p className="text-muted-foreground max-w-xl mx-auto mb-10 text-base sm:text-lg leading-relaxed px-2">
+        <p className="text-muted-foreground max-w-xl mx-auto mb-12 text-base leading-relaxed px-2 font-light">
           Не «самоучка из YouTube» — а сертифицированный специалист Meta. Знаю, как работают алгоритмы, и использую это для вашей выгоды.
         </p>
         
-        <div className="flex items-center justify-center gap-8 sm:gap-10">
+        <div className="flex items-center justify-center gap-10 sm:gap-14">
           {platforms.map((p) => (
             <div key={p.label} className="flex flex-col items-center gap-3 group cursor-default">
-              <div className={`w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br ${p.gradient} flex items-center justify-center group-hover:scale-110 group-hover:-rotate-2 transition-all duration-500 shadow-sm border border-border/30`}>
-                <p.icon className={`w-7 h-7 sm:w-8 sm:h-8 ${p.color}`} />
+              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-primary/5 border border-primary/10 flex items-center justify-center group-hover:bg-primary/10 group-hover:border-primary/20 transition-all duration-700">
+                <p.icon className="w-7 h-7 sm:w-8 sm:h-8 text-primary/50 group-hover:text-primary/80 transition-colors duration-500" />
               </div>
-              <span className="text-xs sm:text-sm font-semibold text-muted-foreground">{p.label}</span>
+              <span className="text-xs text-muted-foreground font-light tracking-wide">{p.label}</span>
             </div>
           ))}
         </div>
       </div>
+      <div className="absolute bottom-0 left-0 right-0 premium-divider" />
     </section>
   );
 };

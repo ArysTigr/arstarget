@@ -8,10 +8,10 @@ const FloatingWhatsApp = () => {
       href={WHATSAPP_URL}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-4 right-4 z-[1000] w-14 h-14 bg-accent hover:bg-accent/90 text-accent-foreground rounded-full flex items-center justify-center shadow-glow-accent hover:shadow-xl hover:scale-110 active:scale-95 transition-all duration-200"
+      className="fixed bottom-5 right-5 z-[1000] w-14 h-14 bg-primary text-primary-foreground rounded-full flex items-center justify-center shadow-glow hover:shadow-xl hover:scale-110 active:scale-95 transition-all duration-300 animate-gold-glow"
       aria-label="Написать в WhatsApp"
     >
-      <MessageCircle className="w-7 h-7" />
+      <MessageCircle className="w-6 h-6" />
     </a>
   );
 };

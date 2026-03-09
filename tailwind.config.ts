@@ -14,8 +14,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Outfit', 'system-ui', 'sans-serif'],
-        body: ['DM Sans', 'system-ui', 'sans-serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        display: ['Playfair Display', 'Georgia', 'serif'],
+        body: ['Inter', 'system-ui', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -77,9 +78,9 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       boxShadow: {
-        'glow': '0 0 20px -5px hsl(var(--primary) / 0.3)',
-        'glow-accent': '0 0 20px -5px hsl(var(--accent) / 0.3)',
-        'card-hover': '0 20px 40px -15px hsl(var(--foreground) / 0.1)',
+        'glow': '0 0 30px -8px hsl(var(--primary) / 0.25)',
+        'glow-accent': '0 0 30px -8px hsl(var(--accent) / 0.25)',
+        'card-hover': '0 24px 60px -20px hsl(var(--primary) / 0.1)',
       },
       keyframes: {
         "accordion-down": {
