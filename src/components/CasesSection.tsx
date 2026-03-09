@@ -10,6 +10,9 @@ const cases = [
     before: "Было: 1 200 ₸/лид",
     text: "За 3 недели снизил стоимость заявки на 43%. РОАС вырос до 4.2",
     badge: "−43%",
+    badgeColor: "bg-accent/10 text-accent",
+    iconGradient: "from-violet/15 to-primary/8",
+    lineColor: "from-violet to-accent",
   },
   {
     icon: Building2,
@@ -19,6 +22,9 @@ const cases = [
     before: "Бюджет: 150 000 ₸",
     text: "38% заявок конвертировались в запись. Расписание заполнено на 3 недели",
     badge: "38% CR",
+    badgeColor: "bg-primary/10 text-primary",
+    iconGradient: "from-cyan/15 to-accent/8",
+    lineColor: "from-primary to-cyan",
   },
   {
     icon: ShoppingBag,
@@ -28,63 +34,63 @@ const cases = [
     before: "Первый запуск",
     text: "Окупаемость 3.1x с первого месяца. Бюджет масштабирован в 3 раза",
     badge: "3.1x ROI",
+    badgeColor: "bg-coral/10 text-coral",
+    iconGradient: "from-coral/15 to-highlight/8",
+    lineColor: "from-coral to-highlight",
   },
 ];
 
 const CasesSection = () => {
   return (
-    <section className="section-padding bg-card/30 relative overflow-hidden">
-      <div className="absolute inset-0 bg-mesh-1" />
+    <section className="section-padding bg-card relative overflow-hidden">
+      <div className="absolute inset-0 bg-mesh-3" />
       <div className="container-narrow relative">
-        <div className="text-center mb-14 sm:mb-18">
-          <span className="inline-block text-primary/60 text-xs font-medium uppercase tracking-[0.25em] mb-4">Кейсы</span>
-          <h2 className="font-display text-2xl sm:text-3xl md:text-4xl text-foreground mb-4 px-2">
+        <div className="text-center mb-10 sm:mb-14">
+          <span className="inline-block text-primary/70 text-xs sm:text-sm font-bold uppercase tracking-[0.2em] mb-3">Кейсы</span>
+          <h2 className="text-xl sm:text-2xl md:text-[2rem] font-extrabold text-foreground mb-3 px-2">
             Не обещания — а цифры
           </h2>
-          <p className="text-muted-foreground text-base font-light">
+          <p className="text-muted-foreground text-base sm:text-lg">
             Реальные результаты за последние 3 месяца
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 mb-10">
           {cases.map((c) => (
-            <div key={c.label} className="group relative overflow-hidden premium-card p-6 sm:p-8 hover:border-primary/15 transition-all duration-700">
-              <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-1000" />
+            <div key={c.label} className="group relative overflow-hidden bg-card/95 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-border/40 hover:border-primary/20 transition-all duration-500"
+                 style={{ boxShadow: 'var(--shadow-premium)' }}>
+              <div className={`absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r ${c.lineColor} scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left`} />
               
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-11 h-11 rounded-xl bg-primary/5 border border-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/10 transition-all duration-500">
-                  <c.icon className="w-5 h-5 text-primary/60" />
+              <div className="flex items-center gap-3 mb-5">
+                <div className={`w-11 h-11 sm:w-13 sm:h-13 rounded-2xl bg-gradient-to-br ${c.iconGradient} flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-500`}>
+                  <c.icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                 </div>
                 <div>
-                  <span className="font-display text-foreground text-sm block">{c.label}</span>
-                  <span className="text-xs text-muted-foreground font-light">{c.before}</span>
+                  <span className="font-bold text-foreground text-sm sm:text-base block">{c.label}</span>
+                  <span className="text-xs text-muted-foreground">{c.before}</span>
                 </div>
               </div>
-              
               <div className="flex items-baseline gap-2 mb-3">
-                <span className="text-3xl sm:text-4xl font-display text-foreground">{c.metric}</span>
-                <span className="text-xs text-muted-foreground font-light">{c.metricLabel}</span>
+                <span className="text-3xl sm:text-4xl font-extrabold text-foreground">{c.metric}</span>
+                <span className="text-xs sm:text-sm text-muted-foreground">{c.metricLabel}</span>
               </div>
-              
-              <div className="inline-block text-primary/80 text-[11px] font-medium px-3 py-1 rounded-full border border-primary/15 bg-primary/5 mb-4 tracking-wider">
+              <div className={`inline-block ${c.badgeColor} text-xs font-bold px-3 py-1.5 rounded-full mb-3`}>
                 {c.badge}
               </div>
-              
-              <p className="text-muted-foreground leading-relaxed text-sm font-light">{c.text}</p>
+              <p className="text-muted-foreground leading-relaxed text-xs sm:text-sm">{c.text}</p>
             </div>
           ))}
         </div>
         
         <div className="text-center">
           <a href="https://teletype.in/@wzarz" target="_blank" rel="noopener noreferrer">
-            <Button variant="outline" className="group w-full sm:w-auto">
+            <Button variant="outline" className="group w-full sm:w-auto border-border/60 hover:border-primary/40">
               <ExternalLink className="w-4 h-4" />
               Смотреть все кейсы
             </Button>
           </a>
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 right-0 premium-divider" />
     </section>
   );
 };

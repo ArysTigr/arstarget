@@ -56,56 +56,56 @@ const ReviewsSection = () => {
   const review = reviews[current];
 
   return (
-    <section className="section-padding bg-background relative overflow-hidden">
+    <section className="section-padding bg-card relative overflow-hidden">
       <div className="absolute inset-0 bg-mesh-2" />
       <div className="container-narrow relative">
-        <div className="text-center mb-14 sm:mb-18">
-          <span className="inline-block text-primary/60 text-xs font-medium uppercase tracking-[0.25em] mb-4">Отзывы</span>
-          <h2 className="font-display text-2xl sm:text-3xl md:text-4xl text-foreground mb-4">
+        <div className="text-center mb-10 sm:mb-14">
+          <span className="inline-block text-accent/80 text-xs sm:text-sm font-bold uppercase tracking-[0.2em] mb-3">Отзывы</span>
+          <h2 className="text-xl sm:text-2xl md:text-[2rem] font-extrabold text-foreground mb-3">
             Что говорят клиенты
           </h2>
-          <p className="text-muted-foreground text-base font-light">
+          <p className="text-muted-foreground text-base sm:text-lg">
             Реальные отзывы предпринимателей
           </p>
         </div>
 
         <div className="max-w-2xl mx-auto">
-          <div className="relative premium-card p-8 sm:p-12 md:p-14">
-            <Quote className="absolute top-6 left-6 sm:top-10 sm:left-10 w-8 h-8 sm:w-10 sm:h-10 text-primary/8" />
+          <div className="relative premium-card p-6 sm:p-10 md:p-12">
+            <Quote className="absolute top-5 left-5 sm:top-8 sm:left-8 w-8 h-8 sm:w-10 sm:h-10 text-violet/10" />
 
             <div className="relative pt-4 sm:pt-0">
-              <div className="flex items-center gap-1.5 mb-5">
+              <div className="flex items-center gap-1 mb-4">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <Star
                     key={i}
-                    className={`w-4 h-4 ${i < review.rating ? "text-primary fill-primary" : "text-border"}`}
+                    className={`w-4 h-4 ${i < review.rating ? "text-highlight fill-highlight" : "text-border"}`}
                   />
                 ))}
               </div>
 
-              <p className="text-foreground/90 leading-relaxed text-sm sm:text-base mb-8 min-h-[100px] sm:min-h-[120px] font-light italic">
+              <p className="text-foreground leading-relaxed text-sm sm:text-base mb-6 min-h-[100px] sm:min-h-[120px]">
                 "{review.text}"
               </p>
 
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
                 <div>
-                  <div className="font-display text-foreground text-sm sm:text-base">{review.name}</div>
-                  <div className="text-xs sm:text-sm text-muted-foreground font-light">{review.role}</div>
+                  <div className="font-bold text-foreground text-sm sm:text-base">{review.name}</div>
+                  <div className="text-xs sm:text-sm text-muted-foreground">{review.role}</div>
                 </div>
-                <div className="inline-block self-start sm:self-auto text-primary/80 text-[11px] font-medium px-4 py-2 rounded-full border border-primary/15 bg-primary/5 tracking-wider">
+                <div className="inline-block self-start sm:self-auto bg-accent/8 text-accent text-xs font-bold px-4 py-2 rounded-full">
                   {review.result}
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="flex items-center justify-center gap-5 mt-8">
+          <div className="flex items-center justify-center gap-4 mt-6">
             <button
               onClick={prev}
-              className="w-10 h-10 rounded-full border border-border/30 bg-card/50 hover:bg-card hover:border-primary/20 flex items-center justify-center transition-all duration-500"
+              className="w-10 h-10 rounded-full border border-border/40 bg-card hover:bg-secondary active:bg-muted flex items-center justify-center transition-all duration-300 shadow-sm"
               aria-label="Предыдущий отзыв"
             >
-              <ChevronLeft className="w-4 h-4 text-muted-foreground" />
+              <ChevronLeft className="w-5 h-5 text-muted-foreground" />
             </button>
 
             <div className="flex gap-2">
@@ -113,8 +113,8 @@ const ReviewsSection = () => {
                 <button
                   key={i}
                   onClick={() => { setIsAutoPlaying(false); setCurrent(i); }}
-                  className={`h-1.5 rounded-full transition-all duration-700 ${
-                    i === current ? "bg-primary w-8" : "bg-border/40 hover:bg-muted-foreground/30 w-1.5"
+                  className={`h-2 rounded-full transition-all duration-500 ${
+                    i === current ? "bg-gradient-to-r from-primary to-violet w-7" : "bg-border/60 hover:bg-muted-foreground/30 w-2"
                   }`}
                   aria-label={`Отзыв ${i + 1}`}
                 />
@@ -123,15 +123,14 @@ const ReviewsSection = () => {
 
             <button
               onClick={next}
-              className="w-10 h-10 rounded-full border border-border/30 bg-card/50 hover:bg-card hover:border-primary/20 flex items-center justify-center transition-all duration-500"
+              className="w-10 h-10 rounded-full border border-border/40 bg-card hover:bg-secondary active:bg-muted flex items-center justify-center transition-all duration-300 shadow-sm"
               aria-label="Следующий отзыв"
             >
-              <ChevronRight className="w-4 h-4 text-muted-foreground" />
+              <ChevronRight className="w-5 h-5 text-muted-foreground" />
             </button>
           </div>
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 right-0 premium-divider" />
     </section>
   );
 };
