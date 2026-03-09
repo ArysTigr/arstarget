@@ -51,6 +51,7 @@ export default {
         violet: "hsl(var(--violet))",
         cyan: "hsl(var(--cyan))",
         rose: "hsl(var(--rose))",
+        gold: "hsl(var(--gold))",
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
