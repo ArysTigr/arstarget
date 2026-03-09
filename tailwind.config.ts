@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Manrope', 'sans-serif'],
-        body: ['Inter', 'sans-serif'],
+        sans: ['Outfit', 'system-ui', 'sans-serif'],
+        body: ['DM Sans', 'system-ui', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -51,6 +51,7 @@ export default {
         violet: "hsl(var(--violet))",
         cyan: "hsl(var(--cyan))",
         rose: "hsl(var(--rose))",
+        gold: "hsl(var(--gold))",
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",

@@ -5,13 +5,13 @@ const WHATSAPP_URL = "https://wa.me/77066980045";
 
 const Header = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-card/80 backdrop-blur-xl border-b border-border/50">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-card/60 backdrop-blur-2xl border-b border-border/30">
       <div className="container-narrow flex items-center justify-between h-16 px-5 md:px-8">
         <div className="font-extrabold text-lg text-foreground tracking-tight">
-          Арыстан <span className="text-primary font-semibold">| Таргетолог</span>
+          Арыстан <span className="text-primary/70 font-medium">| Таргетолог</span>
         </div>
         <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-          <Button variant="whatsapp" size="sm">
+          <Button variant="whatsapp" size="sm" className="shadow-md">
             <MessageCircle className="w-4 h-4" />
             <span className="hidden sm:inline">Написать в WhatsApp</span>
             <span className="sm:hidden">WhatsApp</span>
