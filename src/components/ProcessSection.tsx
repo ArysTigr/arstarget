@@ -41,7 +41,7 @@ const steps = [
 
 const ProcessSection = () => {
   return (
-    <section className="py-20 md:py-28 px-5 md:px-8 lg:px-16 bg-background relative overflow-hidden">
+    <section className="py-16 md:py-28 px-4 md:px-8 lg:px-16 bg-background relative overflow-hidden">
       <div className="absolute inset-0 bg-mesh-3" />
 
       <div className="absolute top-10 right-10 w-[300px] h-[300px] bg-gradient-to-bl from-violet/6 to-transparent rounded-full blur-3xl" />
@@ -68,7 +68,7 @@ const ProcessSection = () => {
             {steps.map((s, i) => (
               <div
                 key={s.step}
-                className="group relative flex gap-5 sm:gap-8 items-start"
+                className="group relative flex gap-4 sm:gap-8 items-start"
               >
                 {/* Step number / icon */}
                 <div className="relative z-10 shrink-0">
@@ -79,7 +79,7 @@ const ProcessSection = () => {
 
                 {/* Content card */}
                 <div className="flex-1 pb-2">
-                  <div className="bg-card/90 backdrop-blur-sm rounded-2xl border border-border/50 p-5 sm:p-7 hover:border-primary/20 hover:shadow-card-hover transition-all duration-500 relative overflow-hidden">
+                  <div className="bg-card/90 backdrop-blur-sm rounded-2xl border border-border/50 p-4 sm:p-7 hover:border-primary/20 hover:shadow-card-hover transition-all duration-500 relative overflow-hidden">
                     {/* Top accent line */}
                     <div className={`absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r ${s.lineColor} scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left`} />
 

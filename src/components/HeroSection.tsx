@@ -10,17 +10,17 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-[100svh] flex items-center pt-16 overflow-hidden">
+    <section className="relative min-h-[100svh] flex items-center pt-16 pb-8 overflow-hidden">
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-[0.04]"
         style={{ backgroundImage: `url(${heroBg})` }}
       />
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-violet/3" />
       
-      {/* Refined animated blobs */}
-      <div className="absolute top-20 right-0 w-[500px] h-[500px] bg-gradient-to-br from-violet/8 via-primary/6 to-transparent rounded-full blur-[100px] animate-blob-drift" />
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-accent/8 via-cyan/5 to-transparent rounded-full blur-[100px] animate-blob-drift-slow" />
-      <div className="absolute top-1/2 left-1/3 w-[300px] h-[300px] bg-gradient-to-r from-coral/4 to-rose/4 rounded-full blur-[80px] animate-blob-drift animate-delay-300" />
+      {/* Animated blobs — smaller on mobile */}
+      <div className="absolute top-20 right-0 w-[250px] h-[250px] sm:w-[500px] sm:h-[500px] bg-gradient-to-br from-violet/8 via-primary/6 to-transparent rounded-full blur-[80px] sm:blur-[100px] animate-blob-drift" />
+      <div className="absolute bottom-0 left-0 w-[200px] h-[200px] sm:w-[400px] sm:h-[400px] bg-gradient-to-tr from-accent/8 via-cyan/5 to-transparent rounded-full blur-[80px] sm:blur-[100px] animate-blob-drift-slow" />
+      <div className="absolute top-1/2 left-1/3 w-[150px] h-[150px] sm:w-[300px] sm:h-[300px] bg-gradient-to-r from-coral/4 to-rose/4 rounded-full blur-[60px] sm:blur-[80px] animate-blob-drift animate-delay-300" />
       
       <div className="relative container-narrow px-5 py-12 sm:section-padding w-full">
         <div className="max-w-2xl">
@@ -34,7 +34,7 @@ const HeroSection = () => {
           </h1>
           
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-8 sm:mb-10 leading-relaxed max-w-xl animate-fade-in-up animate-delay-200">
-            Сливаете бюджет на рекламу без результата? Настрою таргет так, что <strong className="text-foreground font-semibold">каждый тенге вернётся x3.</strong> Онлайн-школы, клиники, магазины — уже работает.
+            Сливаете бюджет на рекламу без результата? Настрою таргет так, что <strong className="text-foreground font-semibold">каждый тенге вернётся ×3.</strong> Онлайн-школы, клиники, магазины — уже работает.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-5 animate-fade-in-up animate-delay-300">

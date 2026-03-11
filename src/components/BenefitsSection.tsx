@@ -14,8 +14,8 @@ const benefits = [
   {
     icon: Coins,
     title: "Платите за продажи, не клики",
-    text: "Оптимизирую по реальной выручке, а не CTR. Средний возврат — ×3.5 с каждого вложенного тенге.",
-    highlight: "РОАС ×3.5",
+    text: "Оптимизирую по реальной выручке, а не по CTR. Средний возврат — ×3,5 с каждого вложенного тенге.",
+    highlight: "РОАС ×3,5",
     iconColor: "text-accent",
     gradient: "from-accent/15 to-cyan/6",
     borderAccent: "group-hover:border-accent/25",
