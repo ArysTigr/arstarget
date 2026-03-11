@@ -32,7 +32,7 @@ const cases = [
     metric: "270",
     metricLabel: "заказов/мес",
     before: "С нуля",
-    text: "Окупаемость ×3.1 с первого месяца. Бюджет масштабирован в 3 раза без потери ROAS.",
+    text: "Окупаемость ×3,1 с первого месяца. Бюджет масштабирован в 3 раза без потери ROAS.",
     badge: "×3.1 ROI",
     badgeColor: "bg-coral/10 text-coral",
     iconGradient: "from-coral/15 to-highlight/8",
