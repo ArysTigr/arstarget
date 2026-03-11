@@ -5,7 +5,7 @@ const WHATSAPP_URL = "https://wa.me/77066980045";
 
 const CtaSection = () => {
   return (
-    <section id="cta" className="py-20 md:py-28 px-5 md:px-8 lg:px-16 relative overflow-hidden" style={{
+    <section id="cta" className="py-16 md:py-28 px-4 md:px-8 lg:px-16 relative overflow-hidden" style={{
       background: 'linear-gradient(145deg, hsl(235 65% 18%), hsl(268 50% 22%), hsl(235 65% 14%))'
     }}>
       {/* Refined decorative elements */}
