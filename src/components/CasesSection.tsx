@@ -6,22 +6,22 @@ const cases = [
     icon: GraduationCap,
     label: "Онлайн-школа",
     metric: "680 ₸",
-    metricLabel: "за заявку",
+    metricLabel: "стоимость лида",
     before: "Было: 1 200 ₸/лид",
-    text: "Снизил стоимость лида на 43% за 3 недели. Поток заполнен. РОАС — 4,2×.",
-    badge: "−43% за лид",
+    text: "За 3 недели снизил стоимость заявки на 43%. РОАС вырос до 4.2",
+    badge: "−43%",
     badgeColor: "bg-accent/10 text-accent",
     iconGradient: "from-violet/15 to-primary/8",
     lineColor: "from-violet to-accent",
   },
   {
     icon: Building2,
-    label: "Стоматология",
+    label: "Мед. клиника",
     metric: "+140",
-    metricLabel: "записей/мес",
+    metricLabel: "заявок/мес",
     before: "Бюджет: 150 000 ₸",
-    text: "38% заявок стали реальными пациентами. Расписание закрыто на 3 недели вперёд.",
-    badge: "38% в запись",
+    text: "38% заявок конвертировались в запись. Расписание заполнено на 3 недели",
+    badge: "38% CR",
     badgeColor: "bg-primary/10 text-primary",
     iconGradient: "from-cyan/15 to-accent/8",
     lineColor: "from-primary to-cyan",
@@ -31,9 +31,9 @@ const cases = [
     label: "Магазин косметики",
     metric: "270",
     metricLabel: "заказов/мес",
-    before: "С нуля",
-    text: "Окупаемость ×3,1 с первого месяца. Бюджет масштабирован в 3 раза без потери ROAS.",
-    badge: "×3,1 ROI",
+    before: "Первый запуск",
+    text: "Окупаемость 3.1x с первого месяца. Бюджет масштабирован в 3 раза",
+    badge: "3.1x ROI",
     badgeColor: "bg-coral/10 text-coral",
     iconGradient: "from-coral/15 to-highlight/8",
     lineColor: "from-coral to-highlight",
@@ -48,10 +48,10 @@ const CasesSection = () => {
         <div className="text-center mb-10 sm:mb-14">
           <span className="inline-block text-primary/70 text-xs sm:text-sm font-bold uppercase tracking-[0.2em] mb-3">Кейсы</span>
           <h2 className="text-xl sm:text-2xl md:text-[2rem] font-extrabold text-foreground mb-3 px-2">
-            Цифры вместо обещаний
+            Не обещания — а цифры
           </h2>
           <p className="text-muted-foreground text-base sm:text-lg">
-            Результаты за последние 90 дней
+            Реальные результаты за последние 3 месяца
           </p>
         </div>
         

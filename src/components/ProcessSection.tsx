@@ -4,8 +4,8 @@ const steps = [
   {
     step: "01",
     icon: Search,
-    title: "Нахожу, где утекают деньги",
-    text: "Разбираю вашу рекламу, нишу и конкурентов. Показываю конкретные дыры в бюджете — бесплатно.",
+    title: "Аудит и анализ",
+    text: "Глубоко разбираю вашу нишу, конкурентов и текущую рекламу. Нахожу точки роста и слабые места, которые сливают бюджет.",
     accent: "primary",
     gradient: "from-primary/20 via-violet/10 to-transparent",
     lineColor: "from-primary to-violet",
@@ -13,8 +13,8 @@ const steps = [
   {
     step: "02",
     icon: Lightbulb,
-    title: "Собираю стратегию под вас",
-    text: "Аудитории, офферы, креативы — всё заточено под вашу цель. Никаких шаблонов «для всех».",
+    title: "Стратегия под цель",
+    text: "Создаю индивидуальную стратегию: подбираю аудитории, форматы, креативы и офферы — всё заточено под вашу конкретную задачу.",
     accent: "violet",
     gradient: "from-violet/20 via-coral/10 to-transparent",
     lineColor: "from-violet to-coral",
@@ -22,8 +22,8 @@ const steps = [
   {
     step: "03",
     icon: Rocket,
-    title: "Запускаю и тестирую за 48 часов",
-    text: "Первые заявки — в течение недели. Слабые гипотезы отключаю мгновенно, рабочие — усиливаю.",
+    title: "Запуск и тестирование",
+    text: "Запускаю рекламу, тестирую гипотезы, отключаю неэффективное. В первую неделю вы уже видите первые заявки и понимаете динамику.",
     accent: "coral",
     gradient: "from-coral/20 via-accent/10 to-transparent",
     lineColor: "from-coral to-accent",
@@ -31,8 +31,8 @@ const steps = [
   {
     step: "04",
     icon: TrendingUp,
-    title: "Масштабирую прибыль",
-    text: "Снижаю цену лида, увеличиваю бюджет. Каждую неделю — отчёт. Вы всегда в курсе.",
+    title: "Масштабирование",
+    text: "Оптимизирую то, что работает, масштабирую бюджет и снижаю стоимость лида. Еженедельные отчёты — вы всегда в курсе.",
     accent: "accent",
     gradient: "from-accent/20 via-cyan/10 to-transparent",
     lineColor: "from-accent to-cyan",
@@ -41,22 +41,23 @@ const steps = [
 
 const ProcessSection = () => {
   return (
-    <section className="py-16 md:py-28 px-4 md:px-8 lg:px-16 bg-background relative overflow-hidden">
+    <section className="py-20 md:py-28 px-5 md:px-8 lg:px-16 bg-background relative overflow-hidden">
       <div className="absolute inset-0 bg-mesh-3" />
 
+      {/* Subtle decorative elements */}
       <div className="absolute top-10 right-10 w-[300px] h-[300px] bg-gradient-to-bl from-violet/6 to-transparent rounded-full blur-3xl" />
       <div className="absolute bottom-10 left-10 w-[250px] h-[250px] bg-gradient-to-tr from-accent/6 to-transparent rounded-full blur-3xl" />
 
       <div className="container-narrow relative">
         <div className="text-center mb-14 sm:mb-16">
           <span className="inline-block text-violet text-xs sm:text-sm font-bold uppercase tracking-[0.2em] mb-3">
-            Как это работает
+            Процесс
           </span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground mb-3 px-2">
-            От аудита до потока клиентов — за 4 шага
+            Как я решаю вашу проблему
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto text-base sm:text-lg leading-relaxed font-body">
-            Простой процесс с понятным результатом на каждом этапе
+            Четыре шага от аудита до стабильного потока клиентов
           </p>
         </div>
 
@@ -68,7 +69,7 @@ const ProcessSection = () => {
             {steps.map((s, i) => (
               <div
                 key={s.step}
-                className="group relative flex gap-4 sm:gap-8 items-start"
+                className="group relative flex gap-5 sm:gap-8 items-start"
               >
                 {/* Step number / icon */}
                 <div className="relative z-10 shrink-0">
@@ -79,7 +80,7 @@ const ProcessSection = () => {
 
                 {/* Content card */}
                 <div className="flex-1 pb-2">
-                  <div className="bg-card/90 backdrop-blur-sm rounded-2xl border border-border/50 p-4 sm:p-7 hover:border-primary/20 hover:shadow-card-hover transition-all duration-500 relative overflow-hidden">
+                  <div className="bg-card/90 backdrop-blur-sm rounded-2xl border border-border/50 p-5 sm:p-7 hover:border-primary/20 hover:shadow-card-hover transition-all duration-500 relative overflow-hidden">
                     {/* Top accent line */}
                     <div className={`absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r ${s.lineColor} scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left`} />
 

@@ -16,11 +16,11 @@ const TrustSection = () => {
           Meta Blueprint Certified
         </div>
         
-        <p className="text-muted-foreground max-w-xl mx-auto mb-10 text-sm sm:text-lg leading-relaxed px-4 sm:px-2">
-          Сертифицированный специалист Meta. Знаю алгоритмы изнутри и использую их, чтобы ваш бюджет работал на максимум.
+        <p className="text-muted-foreground max-w-xl mx-auto mb-10 text-base sm:text-lg leading-relaxed px-2">
+          Не «самоучка из YouTube» — а сертифицированный специалист Meta. Знаю, как работают алгоритмы, и использую это для вашей выгоды.
         </p>
         
-        <div className="flex items-center justify-center gap-6 sm:gap-10">
+        <div className="flex items-center justify-center gap-8 sm:gap-10">
           {platforms.map((p) => (
             <div key={p.label} className="flex flex-col items-center gap-3 group cursor-default">
               <div className={`w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br ${p.gradient} flex items-center justify-center group-hover:scale-110 group-hover:-rotate-2 transition-all duration-500 shadow-sm border border-border/30`}>

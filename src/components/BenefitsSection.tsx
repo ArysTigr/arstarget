@@ -3,8 +3,8 @@ import { BarChart3, Coins, Target } from "lucide-react";
 const benefits = [
   {
     icon: BarChart3,
-    title: "Вы видите каждый тенге",
-    text: "Еженедельный отчёт: расход, лиды, цена заявки. Ноль «мутных» метрик — только то, что влияет на прибыль.",
+    title: "Полная прозрачность",
+    text: "Каждую неделю вы получаете понятный отчёт: сколько потрачено, сколько лидов, какая цена за заявку. Никаких «мутных» метрик.",
     highlight: "Отчёт каждую неделю",
     iconColor: "text-violet",
     gradient: "from-violet/15 to-primary/6",
@@ -13,9 +13,9 @@ const benefits = [
   },
   {
     icon: Coins,
-    title: "Платите за продажи, не клики",
-    text: "Оптимизирую по реальной выручке, а не по CTR. Средний возврат — ×3,5 с каждого вложенного тенге.",
-    highlight: "РОАС ×3,5",
+    title: "Деньги → клиенты",
+    text: "Оптимизирую не по CTR, а по реальным продажам. Средний РОАС моих клиентов — 3.5x. Вы платите за результат, который видно в кассе.",
+    highlight: "РОАС 3.5x в среднем",
     iconColor: "text-accent",
     gradient: "from-accent/15 to-cyan/6",
     borderAccent: "group-hover:border-accent/25",
@@ -23,9 +23,9 @@ const benefits = [
   },
   {
     icon: Target,
-    title: "Стратегия ≠ шаблон",
-    text: "Заполнить поток за 2 недели? Загрузить клинику? Под каждую цель — своя связка аудитории, оффера и креатива.",
-    highlight: "Под вашу цель",
+    title: "Под вашу задачу",
+    text: "Заполнить поток курса за 2 недели? Загрузить клинику записями? Я подберу стратегию под конкретную цель, а не шаблон «для всех».",
+    highlight: "Стратегия под цель",
     iconColor: "text-coral",
     gradient: "from-coral/15 to-highlight/6",
     borderAccent: "group-hover:border-coral/25",
@@ -39,12 +39,12 @@ const BenefitsSection = () => {
       <div className="absolute inset-0 bg-mesh-1" />
       <div className="container-narrow relative">
         <div className="text-center mb-10 sm:mb-14">
-          <span className="inline-block text-accent/80 text-xs sm:text-sm font-bold uppercase tracking-[0.2em] mb-3">Почему я</span>
+          <span className="inline-block text-accent/80 text-xs sm:text-sm font-bold uppercase tracking-[0.2em] mb-3">Преимущества</span>
           <h2 className="text-xl sm:text-2xl md:text-[2rem] font-extrabold text-foreground mb-3 px-2">
-            3 причины доверить бюджет мне
+            Почему предприниматели выбирают меня
           </h2>
           <p className="text-muted-foreground text-base sm:text-lg">
-            Не обещания — а система, которая приносит деньги
+            Три причины, которые превращают бюджет в прибыль
           </p>
         </div>
         
