@@ -68,7 +68,7 @@ const ProcessSection = () => {
             {steps.map((s, i) => (
               <div
                 key={s.step}
-                className="group relative flex gap-5 sm:gap-8 items-start"
+                className="group relative flex gap-4 sm:gap-8 items-start"
               >
                 {/* Step number / icon */}
                 <div className="relative z-10 shrink-0">
