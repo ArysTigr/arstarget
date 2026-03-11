@@ -9,8 +9,8 @@ const CtaSection = () => {
       background: 'linear-gradient(145deg, hsl(235 65% 18%), hsl(268 50% 22%), hsl(235 65% 14%))'
     }}>
       {/* Refined decorative elements */}
-      <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-gradient-to-bl from-violet/12 via-coral/8 to-transparent rounded-full blur-[120px] animate-blob-drift" />
-      <div className="absolute bottom-0 left-0 w-[350px] h-[350px] bg-gradient-to-tr from-primary/10 via-cyan/6 to-transparent rounded-full blur-[120px] animate-blob-drift-slow" />
+      <div className="absolute top-0 right-0 w-[200px] h-[200px] sm:w-[400px] sm:h-[400px] bg-gradient-to-bl from-violet/12 via-coral/8 to-transparent rounded-full blur-[80px] sm:blur-[120px] animate-blob-drift" />
+      <div className="absolute bottom-0 left-0 w-[180px] h-[180px] sm:w-[350px] sm:h-[350px] bg-gradient-to-tr from-primary/10 via-cyan/6 to-transparent rounded-full blur-[80px] sm:blur-[120px] animate-blob-drift-slow" />
       
       <div className="container-narrow text-center relative px-4">
         <h2 className="text-xl sm:text-2xl md:text-[2rem] font-extrabold text-primary-foreground mb-4 px-2 leading-tight">

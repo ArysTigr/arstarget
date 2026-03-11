@@ -79,7 +79,7 @@ const ProcessSection = () => {
 
                 {/* Content card */}
                 <div className="flex-1 pb-2">
-                  <div className="bg-card/90 backdrop-blur-sm rounded-2xl border border-border/50 p-5 sm:p-7 hover:border-primary/20 hover:shadow-card-hover transition-all duration-500 relative overflow-hidden">
+                  <div className="bg-card/90 backdrop-blur-sm rounded-2xl border border-border/50 p-4 sm:p-7 hover:border-primary/20 hover:shadow-card-hover transition-all duration-500 relative overflow-hidden">
                     {/* Top accent line */}
                     <div className={`absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r ${s.lineColor} scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left`} />
 

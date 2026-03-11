@@ -83,8 +83,8 @@ const ReviewsSection = () => {
                 ))}
               </div>
 
-              <p className="text-foreground leading-relaxed text-sm sm:text-base mb-6 min-h-[100px] sm:min-h-[120px]">
-                "{review.text}"
+              <p className="text-foreground leading-relaxed text-sm sm:text-base mb-6 min-h-[80px] sm:min-h-[100px]">
+                «{review.text}»
               </p>
 
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
