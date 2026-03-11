@@ -41,7 +41,7 @@ const steps = [
 
 const ProcessSection = () => {
   return (
-    <section className="py-20 md:py-28 px-5 md:px-8 lg:px-16 bg-background relative overflow-hidden">
+    <section className="py-16 md:py-28 px-4 md:px-8 lg:px-16 bg-background relative overflow-hidden">
       <div className="absolute inset-0 bg-mesh-3" />
 
       <div className="absolute top-10 right-10 w-[300px] h-[300px] bg-gradient-to-bl from-violet/6 to-transparent rounded-full blur-3xl" />
