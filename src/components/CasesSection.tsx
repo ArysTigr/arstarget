@@ -8,7 +8,7 @@ const cases = [
     metric: "680 ₸",
     metricLabel: "за заявку",
     before: "Было: 1 200 ₸/лид",
-    text: "Снизил стоимость лида на 43% за 3 недели. Поток заполнен. РОАС — 4.2×",
+    text: "Снизил стоимость лида на 43% за 3 недели. Поток заполнен. РОАС — 4,2×.",
     badge: "−43% за лид",
     badgeColor: "bg-accent/10 text-accent",
     iconGradient: "from-violet/15 to-primary/8",
