@@ -17,7 +17,7 @@ const TrustSection = () => {
         </div>
         
         <p className="text-muted-foreground max-w-xl mx-auto mb-10 text-base sm:text-lg leading-relaxed px-2">
-          Не «самоучка из YouTube» — а сертифицированный специалист Meta. Знаю, как работают алгоритмы, и использую это для вашей выгоды.
+          Сертифицированный специалист Meta. Знаю алгоритмы изнутри — и использую их, чтобы ваш бюджет работал на максимум.
         </p>
         
         <div className="flex items-center justify-center gap-8 sm:gap-10">

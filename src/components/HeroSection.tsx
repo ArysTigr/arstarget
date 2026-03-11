@@ -26,33 +26,33 @@ const HeroSection = () => {
         <div className="max-w-2xl">
           <div className="inline-flex items-center gap-2 bg-card/80 backdrop-blur-sm text-foreground border border-border/40 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold mb-6 animate-fade-in-up shadow-sm">
             <span className="w-2 h-2 bg-accent rounded-full animate-pulse-soft" />
-            Уже 50+ предпринимателей выбрали результат
+            50+ бизнесов уже получают заявки
           </div>
           
           <h1 className="text-[1.75rem] leading-[1.18] sm:text-3xl md:text-5xl lg:text-[3.25rem] font-extrabold sm:leading-[1.12] text-foreground mb-5 sm:mb-7 animate-fade-in-up animate-delay-100">
-            Привожу клиентов из Instagram и&nbsp;Facebook — <span className="gradient-text-vivid">а&nbsp;не&nbsp;просто&nbsp;клики</span>
+            Заявки из Instagram за&nbsp;7&nbsp;дней — <span className="gradient-text-vivid">или&nbsp;аудит&nbsp;бесплатно</span>
           </h1>
           
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-8 sm:mb-10 leading-relaxed max-w-xl animate-fade-in-up animate-delay-200">
-            Вы тратите на рекламу, но не видите заявок? Настраиваю таргет для онлайн-школ и локального бизнеса в Казахстане так, чтобы <strong className="text-foreground font-semibold">каждый вложенный тенге возвращался с прибылью.</strong>
+            Сливаете бюджет на рекламу без результата? Настрою таргет так, что <strong className="text-foreground font-semibold">каждый тенге вернётся x3.</strong> Онлайн-школы, клиники, магазины — уже работает.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-5 animate-fade-in-up animate-delay-300">
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
               <Button variant="cta" size="lg" className="w-full sm:w-auto group text-base shadow-xl">
                 <MessageCircle className="w-5 h-5" />
-                Написать в WhatsApp
+                Получить аудит бесплатно
                 <ArrowRight className="w-4 h-4 opacity-0 -ml-2 group-hover:opacity-100 group-hover:ml-0 transition-all duration-200 hidden sm:block" />
               </Button>
             </a>
             <Button variant="outline" size="lg" className="w-full sm:w-auto text-base border-border/60 hover:border-primary/40" onClick={scrollToAudit}>
               <Gift className="w-5 h-5" />
-              Бесплатный аудит
+              Смотреть кейсы
             </Button>
           </div>
           
           <p className="text-xs sm:text-sm text-muted-foreground/70 animate-fade-in-up animate-delay-400">
-            ⏱ Отвечаю за 1 час · Аудит бесплатно · Без обязательств
+            ⚡ Ответ за 1 час · Разбор рекламы в подарок · Без обязательств
           </p>
         </div>
       </div>

@@ -14,17 +14,17 @@ const CtaSection = () => {
       
       <div className="container-narrow text-center relative px-4">
         <h2 className="text-xl sm:text-2xl md:text-[2rem] font-extrabold text-primary-foreground mb-4 px-2 leading-tight">
-          Каждый день без рекламы — это клиенты, которые уходят к конкурентам
+          Пока вы думаете — ваши клиенты покупают у конкурентов
         </h2>
         <p className="text-primary-foreground/60 max-w-lg mx-auto mb-8 text-base sm:text-lg">
-          Напишите прямо сейчас — я бесплатно разберу вашу рекламу и покажу, где вы теряете деньги.
+          Напишите сейчас → получите бесплатный разбор рекламы и план, как снизить стоимость заявки.
         </p>
         
         <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="inline-block w-full sm:w-auto">
           <Button variant="cta" size="lg" className="mb-6 shadow-xl group w-full sm:w-auto text-base">
             <MessageCircle className="w-5 h-5" />
-            <span className="hidden sm:inline">Написать в WhatsApp — это бесплатно</span>
-            <span className="sm:hidden">Написать в WhatsApp</span>
+            <span className="hidden sm:inline">Получить бесплатный разбор</span>
+            <span className="sm:hidden">Бесплатный разбор</span>
             <ArrowRight className="w-4 h-4 opacity-0 -ml-2 group-hover:opacity-100 group-hover:ml-0 transition-all duration-200 hidden sm:block" />
           </Button>
         </a>
